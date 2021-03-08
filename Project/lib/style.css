@@ -1,0 +1,21 @@
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+
+h1,
+p {
+  font-family: sans-serif;
+}
+
+.input-group .ng-valid.ng-dirty {
+  border: solid 1px green;
+}
+
+.input-group .ng-invalid.ng-dirty{
+  border: solid 1px red;
+}

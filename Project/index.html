@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css" />
+    <script src="lib/script.js"></script>
+    <script src="lib/directive.js"></script>
+    <script src="lib/contoller.js"></script>
+    <script src="lib/app.js"></script>
+    <script src="service.js"></script>
+  </head>
+
+  <body ng-app="todo" ng-controller="TodoCtrl">
+    <div ng-controller="MainCtrl">
+      
+      <todo-title></todo-title>
+      
+      <todo-form></todo-form>
+
+      <pre>{{todoForm | json}}</pre>
+
+      <ul>
+        <li ng-repeat="todo in todos | filter:statusFilter">
+          <todo-item></todo-item>
+        </li>
+      </ul>
+      
+      <todo-filters></todo-filters>
+    </div>
+  </body>
+</html>
